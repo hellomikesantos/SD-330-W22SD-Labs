@@ -1,0 +1,4 @@
+SELECT ProductID
+FROM SalesLT.Product
+
+ORDER BY StandardCost - ListPrice AS 'Markup';

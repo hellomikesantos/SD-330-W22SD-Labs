@@ -1,0 +1,4 @@
+SELECT Name
+FROM SalesLT.Product
+WHERE EXISTS
+(SELECT ParentProductCategoryID FROM SalesLT.ProductCategory WHERE ParentProductCategoryID = 3);
