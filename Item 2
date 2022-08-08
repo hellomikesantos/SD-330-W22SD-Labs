@@ -1,0 +1,5 @@
+
+SELECT COUNT(*)*COUNT(AddressLine2) / 100 as 'percentage'
+FROM SalesLT.Address
+WHERE 'AddressLine2' IS NOT NULL
+GROUP BY CountryRegion;
