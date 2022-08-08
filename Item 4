@@ -1,0 +1,3 @@
+SELECT COUNT(ProductNumber)
+FROM SalesLT.Product
+WHERE ProductNumber LIKE '% %' OR ProductNumber LIKE '% ';
