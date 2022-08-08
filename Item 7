@@ -1,0 +1,3 @@
+SELECT rowguid
+FROM   SalesLT.Customer
+WHERE  TRY_CONVERT(UNIQUEIDENTIFIER, rowguid) IS NOT NULL;
