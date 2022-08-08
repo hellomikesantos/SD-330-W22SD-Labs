@@ -1,0 +1,4 @@
+SELECT AddressID, CustomerID
+FROM SalesLT.Address
+INNER JOIN SalesLT.CustomerAddress
+ON SalesLT.Address.AddressID = SalesLT.CustomerAddress.AddressID;

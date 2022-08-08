@@ -1,0 +1,5 @@
+SELECT ProductCategoryID
+FROM SalesLT.ProductCategory
+INNER JOIN SalesLT.Product
+ON SalesLT.ProductCategory.ProductCategoryID = SalesLT.Product.ProductCategoryID
+WHERE ProductCategory.Name = 'Bike' AND Product.Weight < 10000;

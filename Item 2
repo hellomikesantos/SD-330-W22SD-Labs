@@ -1,0 +1,5 @@
+SELECT SalesOrderDetailID, ProductID
+FROM SalesLT.SalesOrderHeader
+INNER JOIN SalesLT.SalesOrderDetail
+ON SalesLT.SalesOrderHeader.SalesOrderID = SalesLT.SalesOrderDetail.SalesOrderID
+WHERE OrderQty > 5;
