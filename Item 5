@@ -1,0 +1,3 @@
+SELECT ProductModelID
+FROM SalesLT.Product
+WHERE ListPrice > ProductNumber;
