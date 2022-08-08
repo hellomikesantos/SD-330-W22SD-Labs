@@ -1,0 +1,5 @@
+SELECT SalesOrderID
+FROM SalesLT.SalesOrderHeader
+INNER JOIN SalesLT.SalesOrderDetail
+ON SalesLT.SalesOrderHeader.SalesOrderID = SalesLT.SalesOrderHeader.SalesOrderID
+WHERE SalesOrderDetail.UnitPrice - SalesOrderDetail.UnitPriceDiscount AS 'Total Cost';
