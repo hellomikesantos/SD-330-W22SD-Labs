@@ -1,8 +1,4 @@
-SELECT Name,
-CASE
-	WHEN Name LIKE 'HL%' THEN 'Happy Locomotion Holdings'
-	WHEN Name LIKE 'Men%' THEN 'Human Garments'
-	WHEN Name LIKE 'Women%' THEN 'Human Garments'
-	ELSE Name
-END
-FROM SalesLT.Product;
+SELECT SalesOrderDetailID
+FROM SalesLT.SalesOrderHeader
+INNER JOIN SalesLT.SalesOrderDetail
+ON SalesLT.SalesOrderHeader.SalesOrderID = SalesLT.SalesOrderDetail.SalesOrderID;
