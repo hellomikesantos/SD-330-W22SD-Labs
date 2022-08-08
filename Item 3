@@ -1,0 +1,4 @@
+SELECT CustomerID
+FROM SalesLT.Customer
+WHERE EXISTS
+(SELECT LineTotal FROM SalesLT.SalesOrderDetail WHERE LineTotal < 50000);
