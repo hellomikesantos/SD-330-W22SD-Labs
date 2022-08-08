@@ -1,0 +1,4 @@
+SELECT ProductID
+FROM SalesLT.SalesOrderDetail
+WHERE EXISTS
+(SELECT Name FROM SalesLT.Product WHERE OrderQty > 5);
