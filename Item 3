@@ -1,0 +1,3 @@
+SELECT AVG(StandardCost), AVG(ListPrice)
+FROM SalesLT.Product
+WHERE DiscontinuedDate IS NULL;
